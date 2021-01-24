@@ -1,0 +1,73 @@
+/* Specific styling */
+
+
+/* Styling for the hero banner */
+.welcome {
+  /* Sizing */
+  width: 100vw;
+  height: 100vh;
+
+  /* Flexbox container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+  /* Background styles */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../sweets-images/sharon-mccutcheon-YTGt96tGxSY-unsplash-2.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+}
+.welcome-text {
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+.one-half.column img {
+    margin: auto;
+    width: 80%;
+}
+#more {
+  margin: auto;
+    width: 80%;
+}
+.one-half.column p {
+  margin: auto;
+  width: 80%;
+}
+/* Responsive layout - makes a 1 column layout instead of a multi column layout */
+@media (max-width: 800px) {
+    .row {
+      flex-direction: column;
+    }
+}
+
+/* FOOTER background is black */
+.footer{
+    background-color: black;   
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 0px;
+  }
+  .footer a {
+    text-decoration: none;
+    color: deeppink;
+  }
+  .footer a:hover {
+    color: orange;
+  }
